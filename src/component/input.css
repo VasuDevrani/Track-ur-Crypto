@@ -1,0 +1,100 @@
+.input{
+    color: #fff;
+    background-color: #242d3a;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.heading{
+    font-weight: 800;
+}
+.input-area{
+    font-size: 20px;
+    width: 20em;
+    height: 4rem;
+    margin: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 30px;
+    border: none;
+}
+
+@media screen and (max-width:730px){
+    .input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30rem;
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem;
+        margin: auto;
+        margin-top: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20rem;
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 0.5rem;
+        margin: auto;
+        margin-top: 50px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .input-area{
+        font-size: 15px;
+        width: 15em;
+        height: 3rem;
+        margin: 24px;
+        text-align: center;
+        font-family: sans-serif;
+        border-radius: 30px;
+        border: none;
+    }
+}
+@media screen and (max-width:462px){
+    .input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 15rem;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0.2rem;
+        margin: auto;
+        margin-top: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .input-area{
+        font-size: 15px;
+        width: 12em;
+        height: 2rem;
+        margin: 17px;
+        text-align: center;
+        font-family: sans-serif;
+        border-radius: 30px;
+        border: none;
+    }
+}

@@ -1,0 +1,124 @@
+.navbarItem{
+    /* background: linear-gradient(90deg, rgb(35, 12, 243) 0%, rgb(55, 48, 177) 100%); */
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar-logo{
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+.sticky + .content {
+padding-top: 60px;
+}
+
+.nav-menu
+{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 3rem;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+.nav-links{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover{
+    background-color: #303d4e;
+    border-radius: 4px;
+    transition: all 0.2 ease-out;
+}
+.nav-links-mobile{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    color: white;
+}
+
+@media screen and (max-width: 960px) {
+    .navbarItem{
+        position: relative;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-menu.active{
+        background-color: #1F2833;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        padding-left: 0;
+    }
+    .nav-links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    .navbar-logo{
+        position: absolute;
+        top: 2;
+        left: 0;
+        transform: translate((25%, 50%));
+    }
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 380px) {
+    .navbarItem{
+        font-size: 1rem;
+        background-color: rgb(0, 0, 0);
+    }
+}
+@media screen and (max-width: 300px) {
+    .navbarItem{
+        font-size: 0.6rem;
+        background-color: rgb(0, 0, 0);
+    }
+}
